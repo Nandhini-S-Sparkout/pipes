@@ -1,0 +1,46 @@
+<div class="d-grid gap-3 container">
+<h1>Pipes concept</h1>
+<h3>Date Pipe</h3>
+<div>Date :{{day | date :'dd-MM-yyyy'}}</div>
+<div>Short Date :{{day | date :'shortDate'}}</div>
+<div>Medium Date :{{day | date :'mediumDate'}}</div>
+<div>Long Date :{{day | date :'longDate'}}</div>
+<div>Full Date :{{day | date :'fullDate'}}</div>
+<div>Short Time:{{day | date :'shortTime'}}</div>
+<div>Medium Time:{{day | date :'mediumTime'}}</div>
+<div>Long Time:{{day | date :'longTime'}}</div>
+<div>Short Time:{{day | date :'fullTime'}}</div>
+<h3>Number pipe</h3>
+<div>Number:{{num |number:'6.2-4'}}</div>
+
+<div>Number:{{num1 | percent:'2.1-2'}}</div>
+<h3>Currency pipe</h3>
+<div>currency:{{currency|currency :'CAD':'symbol-narrow':'4.2-2'}}</div>
+<div>currency:{{currency|currency :'CAD':'symbol'}}</div>
+<div>currency:{{currency|currency :'CAD':'code'}}</div>
+<div>currency:{{currency|currency :'INR'}}</div>
+<!--uppercase pipe-->
+<h3>Upper case pipe</h3>
+<div>
+  Uppercase:{{'angular'|uppercase}}
+</div>
+<h3>Lower case pipe</h3>
+<div>
+  Lowercase:{{'ANGULAR TUTORIAL'|lowercase}}
+</div>
+<div>
+  Titlecase:{{'Angular tUTORIAL'|titlecase}}
+</div>
+<h3>Json </h3>
+<div>JSON pipe{{obj | json}}</div>
+<div>slice : {{arr | slice :1:3}}</div>
+<h3>key value pair</h3>
+<div>Key value pair :{{obj |keyvalue |json}}</div>
+<h3>Custom pipe</h3>
+<div>Custom pipe {{'Testing ' | append}}</div>
+<h3>Async pipe</h3>
+<div>Async pipe {{ jsonData |async | json}}</div>
+
+<div> Date : {{date$ | async}}</div>
+
+</div>
